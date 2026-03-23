@@ -1,4 +1,4 @@
-🍔 BBQ BRO - Cardápio Digital
+🍔 Cardápio Digital Online - Live14
 📌 Sobre o projeto
 
 O BBQ BRO é um cardápio digital desenvolvido para apresentar produtos de forma moderna e atrativa, focado principalmente em hamburguerias e restaurantes.
