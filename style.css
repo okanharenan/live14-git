@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../live14-git/imagens/bg.png");
+    background-image: url("imagens/bg.png");
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -35,7 +35,7 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background-image: url("../live14-git/imagens/bg.png");
+    background-image: url("imagens/bg.png");
     z-index: -1;
 }
 
