@@ -50,15 +50,11 @@ Este projeto foi desenvolvido como parte do **Módulo de HTML e CSS** do curso d
 
 ```
 cardapioOnline/
-├── README.md                 # Este arquivo
-├── cardapio.html             # Estrutura e conteúdo
-├── cardapio.css              # Estilos visuais
-└── imagensCompactadas/
-    ├── imagens/              # Assets (logos, produtos)
-    └── requisitos/           # Especificações de design
-        ├── RefCores.txt      # Paleta de cores
-        ├── RoteiroTexto.txt  # Conteúdo dos produtos
-        └── imagens/          # Referências visuais
+├── imagens                 # Assets (logos, produtos)
+├── index.html             # Estrutura e conteúdo
+├── README.md            # Este arquivo
+└── Css / # Estilo da página
+    
 ```
 
 ---
