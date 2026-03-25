@@ -1,105 +1,141 @@
-*{
+:root {
+    /* Cores principais */
+    --cor-fundo: #1E1F22;
+    --cor-texto: #ffffff;
+    --cor-destaque: #FFAE00;
+    --cor-destaque-hover: #a87403;
+
+    /* Cores auxiliares */
+    --cor-box: rgba(37, 37, 37, 0.8);
+    --cor-overlay: rgba(0, 0, 0, 0.2);
+}
+
+/* Reset */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-image: url("/imagens/bg.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: var(--cor-texto);
 }
 
-
-body::before{
-    background-color: rgba(0, 0, 0, 0.2);
+/* Overlay (agora funciona corretamente) */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: var(--cor-overlay);
+    z-index: -1;
 }
 
-header{
+/* Header */
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #1E1F22;
+    background-color: var(--cor-fundo);
     padding: 30px;
     width: 100%;
 }
 
-.logo{
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+        width: 100%;
+    }
+}
+
+/* Logo */
+.logo {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-nav ul{
+/* Menu */
+nav ul {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     list-style: none;
     gap: 20px;
-    
-
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--cor-texto);
+    transition: 0.3s;
 }
 
-nav ul li a:hover{
-    color: #FFAE00;
+nav ul li a:hover {
+    color: var(--cor-destaque);
 }
 
-h1{
+/* Títulos */
+h1 {
     text-align: center;
-    color: white;
     margin: 20px;
 }
 
-h2{
-    color: orange;
+h2 {
+    color: var(--cor-destaque);
     text-align: center;
     padding: 20px;
 }
 
-.boxProduto{
+/* Box Produto */
+.boxProduto {
     display: flex;
     margin: 30px auto;
     width: 600px;
-    height: auto;
     border-radius: 25px;
-    background-color: rgba(37, 37, 37, 0.8);
+    background-color: var(--cor-box);
+    overflow: hidden;
 }
-@media (max-width: 100px) {
+
+@media (max-width: 768px) {
     .boxProduto {
-        width: 100%;
+        flex-direction: column;
+        width: 90%;
     }
 }
 
-Img{
-   width: 300px;
-   height: auto;
+/* Imagem */
+img {
+    width: 300px;
+    height: auto;
 }
 
-
-
-.boxTexto{
-    color: white;
+/* Texto */
+.boxTexto {
     padding: 10px;
 }
 
-.btn{
-    background-color: #FFAE00;
+/* Botão */
+.btn {
+    background-color: var(--cor-destaque);
     padding: 10px;
     width: 150px;
     border-radius: 10px;
-    color: white;
+    color: var(--cor-texto);
     margin: 10px;
-   
-
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
 }
-.btn:hover{
-    background-color: #a87403;
+
+.btn:hover {
+    background-color: var(--cor-destaque-hover);
 }
