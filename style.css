@@ -36,7 +36,7 @@ body::before {
     position: fixed;
     inset: 0;
     background-image: url("imagens/bg.png");
-    z-index: -1;
+    
 }
 
 /* Header */
